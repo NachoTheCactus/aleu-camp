@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.slick-dots > .slick-active{
+  width: fit-content;
+  background-color: black !important;
+  border-radius: 100%;
+}
