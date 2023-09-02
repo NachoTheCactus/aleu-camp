@@ -11,7 +11,7 @@ const config: Config = {
       backgroundImage: {
         'header': 'url(/bgimg.png)'
       },
-      backgroundColor:{
+      colors:{
         'main': '#3C5944'
       },
     },
