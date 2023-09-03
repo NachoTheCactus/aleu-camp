@@ -5,10 +5,6 @@ import React, { useEffect, useState } from 'react'
 
 export default function Benefit({ side, src, alt, title, text }:any) {
 
-    const [translateL, setTranslateL] = useState("-translate-x-full");
-    const [translateR, setTranslateR] = useState("translate-x-full");
-    const [textOpacity, setTextOpacity] = useState("opacity-0")
-
     useEffect(() => {
         const animm = () => {
             let animElements = document.getElementsByClassName("panglica");
@@ -48,7 +44,7 @@ export default function Benefit({ side, src, alt, title, text }:any) {
             </div>
             <div className='flex flex-col md:flex-row items-center justify-between gap-8 py-10'>
                 <p className={`text-sm sm:text-base md:text-lg md:max-w-[50%] anim ${side == "left" ? "order-2 md:order-1" : "order-2"}`}>{Array.isArray(text) ? <>{text[0]}<br/>{text[1]}</> : <>{text}</>}</p>
-                <Image className={`anim animd lg:w-1/3 ${side == "left" ? "order-1 md:order-2" : "order-1"}`} width={1000} height={1000} src={src} alt={alt} />
+                <Image className={`anim animd lg:w-1/3 ${side == "left" ? "order-1 md:order-2" : "order-1"}`} width={400} height={400} src={src} alt={alt} />
             </div>
     </article>
   )

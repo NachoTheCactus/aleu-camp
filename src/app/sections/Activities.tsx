@@ -7,6 +7,9 @@ import PrevArrow from '../components/slick/PrevArrow';
 import NextArrow from '../components/slick/NextArrow';
 import Activity from '../components/Activity';
 import FsLightbox from "fslightbox-react";
+import img1 from "../../../assets/img/activitate_foc_de_tabara.png";
+import img2 from "../../../assets/img/activitate_drumetie.png";
+import img3 from "../../../assets/img/activitate_inot.png"
 
 export default function Activities() {
 
@@ -64,16 +67,16 @@ export default function Activities() {
         <h2 className='titlu text-center text-black font-semibold py-8 md:py-16'>Activitățile noastre</h2>
         <Slider {...settings} className='w-full xl:w-[80%] md:px-12 anim'>
           <button onClick={() => openLightboxOnSlide(1)}>
-            <Activity src="/activitate_foc_de_tabara.png" alt="Imagine activitate foc de tabara" text="Foc de tabără"/>
+            <Activity src={img1} alt="Imagine activitate foc de tabara" text="Foc de tabără"/>
           </button>
           <button onClick={() => openLightboxOnSlide(2)}>
-            <Activity src="/activitate_drumetie.png" alt="Imagine activitate drumetie" text="Drumeție"/>
+            <Activity src={img2} alt="Imagine activitate drumetie" text="Drumeție"/>
           </button>
           <button onClick={() => openLightboxOnSlide(3)}>
-            <Activity src="/activitate_inot.png" alt="Imagine activitate inot" text="Înot"/>
+            <Activity src={img3} alt="Imagine activitate inot" text="Înot"/>
           </button>
           <button onClick={() => openLightboxOnSlide(4)}>
-            <Activity src="/activitate_foc_de_tabara.png" alt="Imagine activitate foc de tabara" text="Foc de tabără"/>
+            <Activity src={img1} alt="Imagine activitate foc de tabara" text="Foc de tabără"/>
           </button>
         </Slider>
       </section>
