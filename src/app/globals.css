@@ -31,3 +31,56 @@ body {
   background-color: black !important;
   border-radius: 100%;
 }
+
+.titlu{
+  @apply text-2xl sm:text-3xl md:text-5xl;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.anim{
+  opacity: 0;
+}
+.anim2{
+  opacity: 0;
+}
+.animated-h{
+  animation: openUp 0.6s forwards;
+}
+
+.animated{
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+.animated-delayed{
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.6s;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

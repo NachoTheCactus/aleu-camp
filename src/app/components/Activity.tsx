@@ -6,9 +6,9 @@ import React from 'react'
 export default function Activity({src, alt, text, i}:any) {
 
   return (
-    <article key={i} className='flex items-center flex-col'>
+    <article key={i} className='flex items-center flex-col sm:mx-4'>
         <Image src={src} alt={alt} width={300} height={300}/>
-        <p className='text-lg font-semibold text-black'>{text}</p>
+        <p className='pt-4 text-lg font-semibold text-black'>{text}</p>
     </article>
   )
 }
