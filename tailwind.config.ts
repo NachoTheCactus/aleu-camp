@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import bgimg from './assets/img/bgimg.png'
 
 const config: Config = {
   content: [
@@ -9,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'header': 'url(/images/bgimg.png)'
+        'header': `url(${bgimg})`
       },
       colors:{
         'main': '#3C5944'
