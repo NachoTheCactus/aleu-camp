@@ -6,7 +6,7 @@ import img3 from "../../../assets/img/beneficiu_mancare.png"
 
 export default function Benefits() {
   return (
-    <section id='beneficii' className='bg-white w-full mt-[56px] md:mt-[100px] overflow-hidden'>
+    <section id='beneficii' className='bg-white w-full mt-[52px] min-[416px]:mt-[56px] md:mt-[100px] overflow-hidden'>
         <section className='container mx-auto p-4 md:p-8 text-black font-semibold border-t-2 border-t-black'>
             <h2 className='titlu text-center py-8 anim'>Beneficiile noastre</h2>
             <Benefit side="left" src={img1} alt="Imagine beneficiu cazare" title="Cazare inclusă" text="Suntem încântați să vă anunțăm că cazarea în cadrul taberei noastre de vară este gratuită pe tot parcursul taberei!"/>
