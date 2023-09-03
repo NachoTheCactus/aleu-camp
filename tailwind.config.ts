@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'header': `url(${bgimg})`
+        'header': `url(/bgimg.png)`
       },
       colors:{
         'main': '#3C5944'
