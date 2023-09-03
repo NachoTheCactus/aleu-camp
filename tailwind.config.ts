@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import bgimg from './assets/img/bgimg.png'
 
 const config: Config = {
   content: [
